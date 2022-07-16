@@ -19,8 +19,8 @@ btnEl.addEventListener("click", () => {
   }
 });
 
-const mediaQueryM = window.matchMedia("(max-width: 415px)");
-const mediaQueryD = window.matchMedia("(min-width: 416px");
+const mediaQueryM = window.matchMedia("(max-width: 425px)");
+const mediaQueryD = window.matchMedia("(min-width: 426px");
 
 function forDesktop(mq) {
   if (mq.matches) {
