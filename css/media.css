@@ -1,0 +1,36 @@
+@media screen and (max-width: 415px) {
+  .left {
+    float: none;
+    width: 100%;
+    padding: 0 25px;
+  }
+  .left .logo {
+    margin-top: 25px;
+  }
+  .left .article {
+    text-align: center;
+  }
+  .left .article-header {
+    margin: auto;
+  }
+  .right {
+    overflow: visible;
+    position: relative;
+    width: 100%;
+    left: -25px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+  }
+  .right img {
+    width: calc(100% + 50px);
+    height: 250px;
+    -o-object-position: 0 20%;
+       object-position: 0 20%;
+  }
+  body::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 50px;
+  }
+}/*# sourceMappingURL=media.css.map */
