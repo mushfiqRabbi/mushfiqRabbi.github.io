@@ -1,0 +1,134 @@
+@import "./utils";
+
+body {
+  background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+  font: {
+    family: $dfont;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.warning {
+  background: transparent url(../images/icon-error.svg) no-repeat 71% center;
+}
+
+.left {
+  width: 60%;
+  float: left;
+  padding: 0 15.5%;
+
+  .msg {
+    font-size: 0.8rem;
+    color: $SoftRed;
+    margin: 10px 0 0 30px;
+  }
+
+  .user-email {
+    margin-top: 40px;
+    position: relative;
+    #input-email {
+      border: 0.5px solid lightgray;
+      border-radius: 50px;
+      padding: 15px 25px;
+      width: 100%;
+      font-family: inherit;
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: $DarkGrayishRed;
+
+      &::placeholder {
+        color: lightgray;
+        font-weight: 400;
+        font-size: 0.8rem;
+      }
+      &:focus {
+        outline: 1px solid $SoftRed;
+      }
+    }
+    button {
+      border: none;
+      background-color: transparent;
+      position: absolute;
+      cursor: pointer;
+      top: -1px;
+      right: -3px;
+      height: calc(100% + 2px);
+      width: 25%;
+      background-image: linear-gradient(
+        135deg,
+        hsl(0, 80%, 86%),
+        hsl(0, 74%, 74%)
+      );
+      border-radius: 50px;
+      &:hover {
+        box-shadow: 0 5px 15px 5px rgba(0, 0, 0, 0.2);
+        background-image: linear-gradient(
+          135deg,
+          hsl(0, 80%, 86%),
+          hsl(0, 80%, 86%)
+        );
+      }
+
+      .fa-chevron-right {
+        box-sizing: content-box;
+        border: none;
+        border-radius: 50px;
+        color: white;
+      }
+    }
+  }
+
+  .logo {
+    margin-top: 50px;
+    .fa-circle {
+      font-size: 25px;
+      vertical-align: middle;
+      color: $DesaturatedRed;
+    }
+    p {
+      display: inline-block;
+      width: min-content;
+      vertical-align: middle;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-weight: 900;
+      margin-left: 3px;
+    }
+  }
+  .article {
+    margin-top: 100px;
+    &-header {
+      text-transform: uppercase;
+      letter-spacing: 10px;
+      font-size: 3rem;
+      font-weight: 600;
+      width: min-content;
+      &::first-line {
+        color: $DesaturatedRed;
+        font-weight: 300;
+      }
+    }
+    &-body {
+      color: rgba(206, 151, 152, 0.8);
+      font-size: 0.9rem;
+      margin-top: 25px;
+      line-height: 1.7;
+    }
+  }
+}
+
+.right {
+  width: 40%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}

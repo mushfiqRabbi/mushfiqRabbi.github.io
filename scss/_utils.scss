@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+$DesaturatedRed: #ce9798;
+$SoftRed: hsl(-1, 93%, 68%);
+$DarkGrayishRed: hsl(-1, 6%, 24%);
+
+$dfont: "Josefin Sans", sans-serif;
